@@ -50,30 +50,57 @@ value:3
 
 
 });
-document.addEventListener("DOMContentLoaded", function(){
-
+document.addEventListener("DOMContentLoaded", function () {
 
     const hamburger = document.querySelector(".hamburger");
-
     const menu = document.querySelector(".mobile-menu");
 
 
-    if(hamburger && menu){
+    // Open / close menu by hamburger click
+    hamburger.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        menu.classList.toggle("show");
+
+    });
 
 
-        hamburger.addEventListener("click", function(e){
+
+    // Close menu when clicking anywhere outside
+    document.addEventListener("click", function (e) {
 
 
-            e.stopPropagation();
+        const clickedInsideMenu = menu.contains(e.target);
+
+        const clickedHamburger = hamburger.contains(e.target);
 
 
-            menu.classList.toggle("show");
 
+        if (!clickedInsideMenu && !clickedHamburger) {
+
+            menu.classList.remove("show");
+
+        }
+
+
+    });
+
+
+
+    // Close menu after selecting a nav link
+    const menuLinks = document.querySelectorAll(".mobile-menu a");
+
+
+    menuLinks.forEach(link => {
+
+        link.addEventListener("click", function(){
+
+            menu.classList.remove("show");
 
         });
 
-
-    }
+    });
 
 
 });
