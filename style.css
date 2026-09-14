@@ -10,6 +10,25 @@ body {
     overflow-x:hidden;
 
 }
+#particles-js{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+
+    z-index:-5;
+
+
+    pointer-events:none;
+
+}
 header{padding:45px 8%}
 nav{display:flex;justify-content:space-between}
 .logo span{color:#00aaff}

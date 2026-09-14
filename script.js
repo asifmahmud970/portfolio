@@ -1,3 +1,55 @@
+window.addEventListener("load", () => {
+
+
+tsParticles.load({
+
+id:"particles-js",
+
+
+options:{
+
+
+particles:{
+
+
+number:{
+value:80
+},
+
+
+color:{
+value:"#00aaff"
+},
+
+
+links:{
+enable:true,
+color:"#00aaff",
+distance:150
+},
+
+
+move:{
+enable:true,
+speed:1
+},
+
+
+size:{
+value:3
+}
+
+
+}
+
+
+}
+
+
+});
+
+
+});
 console.log('Asif Portfolio Loaded');
 
 const words = [
@@ -128,5 +180,168 @@ const mobileMenu = document.getElementById("mobileMenu");
 hamburger.addEventListener("click", function(){
 
     mobileMenu.classList.toggle("show");
+
+});
+tsParticles.load("particles-js", {
+
+
+background: {
+
+    color: {
+
+        value: "transparent"
+
+    }
+
+},
+
+
+fpsLimit:60,
+
+
+particles:{
+
+
+number:{
+
+    value:60,
+
+},
+
+
+
+color:{
+
+    value:"#00aaff"
+
+},
+
+
+
+shape:{
+
+    type:"circle"
+
+},
+
+
+
+opacity:{
+
+    value:0.35
+
+},
+
+
+
+size:{
+
+    value:{
+        min:1,
+        max:3
+    }
+
+},
+
+
+
+move:{
+
+
+    enable:true,
+
+
+    speed:0.8,
+
+
+    direction:"none",
+
+
+    outModes:"out"
+
+
+},
+
+
+
+
+links:{
+
+
+    enable:true,
+
+
+    distance:150,
+
+
+    color:"#00aaff",
+
+
+    opacity:0.25,
+
+
+    width:1
+
+
+}
+
+
+
+},
+
+
+
+interactivity:{
+
+
+events:{
+
+
+    onHover:{
+
+
+        enable:true,
+
+
+        mode:"grab"
+
+
+    }
+
+
+
+},
+
+
+modes:{
+
+
+    grab:{
+
+
+        distance:200,
+
+
+        links:{
+
+
+            opacity:0.5
+
+
+        }
+
+
+    }
+
+
+}
+
+
+},
+
+
+
+detectRetina:true
+
 
 });
