@@ -78,15 +78,6 @@ footer{text-align:center;padding:20px;background:#00000000}
     background:
 
 
-    /* Top right blue glow */
-
-    radial-gradient(
-        circle at 95% 5%,
-        rgba(55,130,255,0.25),
-        transparent 25%
-    ),
-
-
     /* Bottom subtle glow */
 
     radial-gradient(
