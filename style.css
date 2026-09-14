@@ -2080,3 +2080,60 @@ width:calc(100% - 60px);
     z-index:100000;
     position:relative;
 }
+
+/* ===============================
+   Mobile Hero Portrait Responsive Fix
+   Reduces image size and prevents overflow
+================================= */
+
+@media (max-width:768px){
+
+
+    /* Reduce the whole portrait container size */
+    .portrait{
+
+        width:280px;
+
+        height:280px;
+
+        margin:20px auto 0;
+
+    }
+
+
+
+    /* Reduce profile image size */
+    .portrait img{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+
+
+    /* Reduce the glowing ring size */
+    .ring{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+
+
+    /* Reduce the blue glow behind portrait */
+    .portrait::before{
+
+        width:240px;
+
+        height:240px;
+
+        filter:blur(80px);
+
+    }
+
+
+}
