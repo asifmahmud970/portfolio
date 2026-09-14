@@ -5,3 +5,32 @@
     margin-left: auto;
     margin-right: auto;
 }
+.background {
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-10;
+
+    background:
+
+    /* Bottom subtle glow */
+
+    radial-gradient(
+        circle at 20% 90%,
+        rgba(0,170,255,0.08),
+        transparent 30%
+    ),
+
+
+    /* Main dark color */
+
+    linear-gradient(
+        135deg,
+        #0c0d10,
+        #111318
+    );
+
+
+}
