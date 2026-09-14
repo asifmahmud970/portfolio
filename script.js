@@ -50,6 +50,33 @@ value:3
 
 
 });
+document.addEventListener("DOMContentLoaded", function(){
+
+
+    const hamburger = document.querySelector(".hamburger");
+
+    const menu = document.querySelector(".mobile-menu");
+
+
+    if(hamburger && menu){
+
+
+        hamburger.addEventListener("click", function(e){
+
+
+            e.stopPropagation();
+
+
+            menu.classList.toggle("show");
+
+
+        });
+
+
+    }
+
+
+});
 console.log('Asif Portfolio Loaded');
 
 const words = [

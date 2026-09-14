@@ -1731,11 +1731,11 @@ html {
 
 
 
-.hamburger{
+.hamburger {
 
     display:none;
 
-    background:none;
+    background:transparent;
 
     border:none;
 
@@ -1745,8 +1745,9 @@ html {
 
     cursor:pointer;
 
-}
+    z-index:99999;
 
+}
 
 
 .mobile-menu{
@@ -1772,6 +1773,11 @@ html {
 
 @media(max-width:768px){
 
+ .hamburger{
+
+        display:block;
+
+    }
 
 .navbar-box{
 
@@ -1820,7 +1826,14 @@ html {
 
 
     border-radius:20px;
+    z-index:99998;
+    .mobile-menu.show{
 
+
+    display:flex;
+
+
+}
 
 }
 
@@ -2041,5 +2054,30 @@ width:calc(100% - 60px);
 .contact-item a {
 
     text-align:left;
+
+}
+.mobile-menu{
+
+    display:flex;
+
+    gap:30px;
+
+}
+@media(max-width:768px){
+
+
+.mobile-menu{
+
+    display:none;
+
+}
+
+
+.mobile-menu.show{
+
+    display:flex;
+
+}
+
 
 }
