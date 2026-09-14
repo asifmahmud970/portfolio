@@ -902,20 +902,52 @@ color:#aaa;
 
 .contact-item {
 
+  
     display:flex;
 
     align-items:center;
 
-    
+    gap:18px;
 
-    gap:20px;
 
-    text-align:left;
+    width:100%;
+
+
+    min-width:0;
+
 
 }
 
 
+.contact-item > div:last-child{
 
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+.contact-item p,
+.contact-item a{
+
+
+    display:block;
+
+
+    max-width:100%;
+
+
+    overflow:hidden;
+
+
+    text-overflow:ellipsis;
+
+
+    white-space:nowrap;
+
+
+}
 
 .icon{
 
@@ -952,7 +984,23 @@ font-size:18px;
 
 
 }
+.icon{
 
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+}
 .contact-item > div:last-child {
 
     min-width:220px;
@@ -1078,7 +1126,21 @@ font-size:40px;
     backdrop-filter:blur(20px);
 
 }
+.contact-card {
 
+    width:100%;
+
+    max-width:520px;
+
+    padding:clamp(20px, 5vw, 40px);
+
+
+    margin:auto;
+
+
+    box-sizing:border-box;
+
+}
 }
 .divider {
 
@@ -1835,4 +1897,149 @@ overflow:hidden;
 
 .navbar-box{
 width:calc(100% - 60px);
+}
+@media(max-width:600px){
+
+
+.contact{
+
+    padding:60px 20px;
+
+}
+
+
+.contact-card{
+
+    width:100%;
+
+    border-radius:22px;
+
+}
+
+
+.contact-item{
+
+    gap:14px;
+
+}
+
+
+.contact-item label{
+
+    font-size:11px;
+
+}
+
+
+.contact-item p,
+.contact-item a{
+
+    font-size:14px;
+
+}
+
+
+.icon{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+
+}
+@media(max-width:600px){
+
+.mobile-logo{
+
+    font-size:18px;
+
+    max-width:160px;
+
+    line-height:1.2;
+
+}
+
+
+}
+.contact {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.contact-card {
+
+    width:100%;
+
+    max-width:520px;
+
+    margin:60px auto 0;
+
+
+    padding:40px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    background:
+    rgba(20,20,20,.45);
+
+
+    border:1px solid rgba(255,255,255,.15);
+
+
+    border-radius:25px;
+
+
+    backdrop-filter:blur(20px);
+
+}
+.contact-item {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:20px;
+
+    width:100%;
+
+    text-align:left;
+
+}
+
+
+.contact-item > div:last-child {
+
+    text-align:left;
+
+}
+
+
+.contact-item label {
+
+    text-align:left;
+
+}
+
+
+.contact-item p,
+.contact-item a {
+
+    text-align:left;
+
 }
