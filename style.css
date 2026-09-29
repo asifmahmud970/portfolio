@@ -2505,17 +2505,19 @@ margin-left:42px;
     display:grid;
 
 
-    grid-template-columns:
-
-    repeat(3,1fr);
-
-
+    grid-template-columns:repeat(3,1fr);
     
+    gap:30px;
+    
+    column-gap:5px;
 
+    row-gap:5px;
+
+    align-items:start;
 
     margin-top:50px;
 
-
+    margin-bottom:10px;
 }
 
 
@@ -2542,9 +2544,7 @@ margin-left:42px;
     border-radius:22px;
 
 
-    backdrop-filter:
-
-    blur(5px);
+    backdrop-filter:blur(5px);
 
 
 
